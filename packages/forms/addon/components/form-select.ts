@@ -24,7 +24,8 @@ export interface FormSelectArgs extends PowerSelectArgs {
   containerClass?: string;
   /** The size */
   size?: 'sm' | 'lg';
-
+  /** rendered in place instead of being attached to the root of the body */
+  renderInPlace?: boolean; 
   // Same as onFocus from ember-power-select
   onFocusIn?: (select: Select, event: FocusEvent) => void;
   // Same as onBlur from ember-power-select
