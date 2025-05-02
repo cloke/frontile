@@ -14,8 +14,8 @@ const postcssPlugins = [
     }
   },
   require('postcss-nested'),
-  require('tailwindcss')('./tailwind.config.js'),
-  require('autoprefixer')
+  // require('tailwindcss')('./tailwind.config.js'),
+  // require('autoprefixer')
 ];
 
 module.exports = function (defaults) {

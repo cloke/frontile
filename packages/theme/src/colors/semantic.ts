@@ -1,12 +1,9 @@
-import resolveConfig from 'tailwindcss/resolveConfig';
-import tailwindConfig from 'tailwindcss/defaultConfig';
+import tw from 'tailwindcss/defaultTheme';
 import { readableColor } from 'color2k';
 import { swapColorValues } from './util';
 import { gray, blue, green, red, yellow } from './defaults';
 
 import type { ThemeColors, SemanticBaseColors } from './types';
-
-const tw = resolveConfig(tailwindConfig).theme;
 
 const base: SemanticBaseColors = {
   light: {
@@ -103,7 +100,7 @@ const themeColorsLight: ThemeColors = {
   },
   danger: {
     ...red,
-    foreground: tw.colors.white,
+    foreground: tw.colors().white,
     DEFAULT: red[600]
   }
 };
@@ -122,7 +119,7 @@ const themeColorsDark: ThemeColors = {
   },
   success: {
     ...swapColorValues(green),
-    foreground: tw.colors.white,
+    foreground: tw.colors().white,
     DEFAULT: green[500]
   },
   warning: {

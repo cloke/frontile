@@ -103,7 +103,7 @@
     "tailwindcss": "*"
   },
   "engines": {
-    "node": "10.* || >= 12"
+    "node": "16.* || >= 18"
   },
   "publishConfig": {
     "access": "public"

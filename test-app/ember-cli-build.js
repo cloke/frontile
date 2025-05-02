@@ -25,7 +25,7 @@ module.exports = function (defaults) {
         includePaths: ['app', 'node_modules/@frontile/theme/dist'],
         cacheInclude: [/.*\.(css|hbs|js|gts)$/, /tailwind\.config\.js$/],
         plugins: [
-          require('tailwindcss')('./tailwind.config.js'),
+          // require('tailwindcss')('./tailwind.config.js'),
           require('autoprefixer')
         ]
       }

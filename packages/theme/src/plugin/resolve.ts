@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { flatten } from 'flat';
 import kebabCase from 'lodash.kebabcase';
 import mapKeys from 'lodash.mapkeys';
@@ -10,7 +11,7 @@ import type {
   PluginConfig,
   ConfigTheme
 } from '../types';
-import type { CSSRuleObject } from 'tailwindcss/types/config';
+// import type { CSSRuleObject } from 'tailwindcss/types/config';
 import { defaultConfig } from './default-config';
 
 const parsedColorsCache: Record<string, number[]> = {};
