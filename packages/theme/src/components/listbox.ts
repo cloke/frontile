@@ -32,7 +32,7 @@ const listboxItem = tv({
       'text-foreground-500',
       'group-hover:text-current'
     ],
-    selectedIcon: ['text-inherit', 'w-4', 'h-4', 'flex-shrink-0'],
+    selectedIcon: ['text-inherit', 'w-4', 'h-4', 'flex-shrink'],
     shortcut: [
       'px-1',
       'py-0.5',

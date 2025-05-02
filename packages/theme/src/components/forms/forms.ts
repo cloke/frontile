@@ -262,7 +262,7 @@ const switchInput = tv({
       'inline-flex',
       'items-center',
       'justify-start',
-      'flex-shrink-0',
+      'flex-shrink',
       'overflow-hidden',
       'bg-default-300',
       'rounded-full',
